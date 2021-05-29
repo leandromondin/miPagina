@@ -1,0 +1,454 @@
+@charset "UTF-8";
+/* Menu de navegación -header*/
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: 1s linear;
+  /*Index*/
+  /*miViaje*/
+  /*Trabajo*/ }
+  header .background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+  header .animate__pulse {
+    --animate-duration: 6s; }
+  header .animate__shakeX {
+    --animate-duration: 20s; }
+  header nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    /* ancho de pantalla 60% */
+    height: 10%;
+    text-decoration: none; }
+    @media only screen and (min-width: 100px) {
+      header nav .ul--item {
+        width: 80vw;
+        /* ancho de pantalla 60% */
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vw; } }
+    @media only screen and (min-width: 768px) {
+      header nav .ul--item {
+        width: 80vw;
+        /* ancho de pantalla 60% */
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 3vh; } }
+    header nav .ul--item li:hover {
+      /* margin-bottom:0.5vw; */
+      border-bottom: solid 2px #014D40;
+      color: #102A43; }
+    header nav .ul--item li a {
+      color: #627D98;
+      text-decoration: none; }
+    header nav .ul--item li a .light {
+      color: #C6F7E2; }
+    header nav .ul--item li a:hover {
+      color: #102A43; }
+  header .header__changeLanguage {
+    color: #102A43;
+    width: 40vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    header .header__changeLanguage .light {
+      color: #C6F7E2; }
+    header .header__changeLanguage p {
+      color: #102A43;
+      margin: 0;
+      margin-right: 1vw;
+      font-size: 2vh; }
+    header .header__changeLanguage p a {
+      color: #102A43;
+      text-decoration: none; }
+    header .header__changeLanguage .header__changeLanguage--linkedin_image {
+      height: 3.5vh;
+      margin-right: 4vh;
+      margin-left: 3vh;
+      opacity: 0.4;
+      border-radius: 50%; }
+  header .header__presentacion {
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20%; }
+    header .header__presentacion .header__presentacion--darkh1 {
+      font-size: 5vh;
+      color: #102A43; }
+    header .header__presentacion .header__presentacion--lighth1 {
+      font-size: 5vh;
+      color: #C6F7E2; }
+    header .header__presentacion .header__presentacion--darkh2 {
+      font-size: 3vh;
+      color: #627D98;
+      opacity: 0.6; }
+    header .header__presentacion .header__presentacion--lighth2 {
+      font-size: 3vh;
+      color: #627D98;
+      opacity: 0.6; }
+  header .header__frasePortada {
+    height: 20%;
+    background-color: #199473;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+    opacity: 0.8; }
+  header .header__frasePortada--primerRenglon {
+    font-size: 150%;
+    color: #EFFCF6;
+    margin-top: 1vw;
+    margin-bottom: 1vw; }
+  header .header__frasePortada--pRelleno {
+    background-color: white;
+    font-size: 150%;
+    color: #199473;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw; }
+  header .header__frasePortada--pRelleno p {
+    margin: 0; }
+  header .header__frasePortadaMiViaje {
+    height: 20%;
+    background-color: #627D98;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vh;
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+    opacity: 0.8;
+    width: 100%; }
+  header .header__frasePortadaMiViajeOpciones {
+    display: flex;
+    flex-direction: row; }
+  header .header__frasePortadaMiViajeOpciones p {
+    font-size: 2.5vh;
+    padding: 2vh;
+    margin-right: 6vh; }
+  header .header__frasePortadaMiViajeOpciones p:hover {
+    background-color: white;
+    color: #199473; }
+  header .header__fraseTrabajo {
+    height: 20%;
+    background-color: #D9E2EC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vh;
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+    opacity: 0.7;
+    color: blacK;
+    font-size: 3vh; }
+  header .header__fraseTrabajo .pRelleno {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
+
+a {
+  color: black; }
+
+/*Cuerpo de la web*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nixie One'; }
+
+.index__carousel {
+  color: white; }
+
+.index__carousel--texto {
+  background-color: #3EBD93;
+  width: 50%; }
+
+.index__carousel--anio {
+  background-color: #3EBD93;
+  color: white;
+  width: 50%;
+  opacity: 0.7; }
+
+.bannerArteyAmarte {
+  width: 100vw;
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex; }
+  .bannerArteyAmarte .arteBack {
+    background-image: url(../imagenes/arteBack.jpeg);
+    background-size: cover;
+    z-index: -2;
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    opacity: 0.5; }
+  .bannerArteyAmarte .fondoArteyAmarteContainer {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 180vh;
+    background-position: center center;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    background-color: #3EBD93; }
+  .bannerArteyAmarte .arteyAmarteContainer {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 180vh;
+    background-position: center center;
+    border-radius: 10vw;
+    text-align: center; }
+    .bannerArteyAmarte .arteyAmarteContainer h1 {
+      width: 100%;
+      height: 18vh;
+      font-size: 4vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: #102A43; }
+    .bannerArteyAmarte .arteyAmarteContainer p {
+      width: 100%;
+      height: 25vh;
+      font-size: 2.5vh;
+      display: flex;
+      align-items: center;
+      color: #102A43;
+      justify-content: flex-start;
+      flex-direction: column; }
+  .bannerArteyAmarte .arteyAmarteContainer__pintura {
+    height: 48vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    margin-bottom: 2vh; }
+  .bannerArteyAmarte .arteyAmarteContainer__pintura__main {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.671);
+    color: white; }
+  .bannerArteyAmarte .pintura__main--titlePicture {
+    height: 20%;
+    width: 100%;
+    background-color: #3EBD93;
+    border: solid 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+  .bannerArteyAmarte .pintura__main--titlePicture .pintura__main--titlePicture--year {
+    width: 20%;
+    height: 50%;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 1vh 1vh 1vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+    background-color: #199473; }
+  .bannerArteyAmarte .pintura__main--titlePicture .pintura__main--descriptionPicture {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vh;
+    margin-top: 3vh; }
+  .bannerArteyAmarte .pintura__main--titlePicture .pintura__main--descriptionPicture--namePicture {
+    color: white;
+    font-size: 4vh;
+    justify-content: top;
+    align-items: flex-start; }
+  .bannerArteyAmarte .pintura__main--titlePicture .pintura__main--descriptionPicture--recaudacion {
+    font-size: 2vh;
+    align-items: flex-start;
+    height: 20%; }
+  .bannerArteyAmarte .arteyAmarteContainer__pintura__main img {
+    height: 66%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20%;
+    -webkit-transition: 1s linear;
+    transition: 1s linear; }
+  .bannerArteyAmarte .arteyAmarteContainer__pintura__main img:hover {
+    -webkit-transform: perspective(500px) rotateY(10deg);
+    transform: perspective(150px) rotateY(10deg); }
+
+.bannerFelicidad {
+  width: 100vw;
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  flex-direction: column;
+  display: flex; }
+  .bannerFelicidad .bannerFelicidad--fondo0 {
+    background-image: url(../imagenes/questions.jpeg);
+    background-size: cover;
+    z-index: -2;
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    opacity: 0.5; }
+  .bannerFelicidad .bannerFelicidad--fondo1 {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 180vh;
+    background-position: center center;
+    border-top-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+    background-color: black; }
+  .bannerFelicidad .bannerFelicidadContainer {
+    margin-top: 10vh;
+    margin-left: 5vw;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    height: 180vh;
+    background-position: center center;
+    border-radius: 10vw;
+    text-align: justify;
+    color: white; }
+  .bannerFelicidad .bannerFelicidadContainer h1 {
+    width: 100%;
+    height: 18vh;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white; }
+  .bannerFelicidad .bannerFelicidadContainer p {
+    width: 100%;
+    height: 25vh;
+    font-size: 2.5vh; }
+  .bannerFelicidad .bannerFelicidadContainer__testimonio {
+    width: 100%;
+    font-size: 3.5vh;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+    margin-bottom: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh; }
+
+@media only screen and (min-width: 100px) {
+  footer {
+    width: 100%;
+    height: 10vh;
+    background-color: #199473;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
+    text-align: center; }
+    footer .footer__redesSociales {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50vw; }
+    footer .footer__redesSociales img {
+      margin-top: 2vw;
+      margin-bottom: 2vw;
+      height: 3vh;
+      opacity: 0.7;
+      border-radius: 100%; }
+    footer .footer__redesSocialesP {
+      padding-left: 2vw;
+      padding-right: 2vw;
+      border-left: solid 1px white;
+      border-right: solid 1px white;
+      margin: 0; } }
+
+@media only screen and (min-width: 768px) {
+  footer {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), #199473);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    text-align: center; }
+    footer .footer__redesSociales {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 10vw; }
+    footer .footer__redesSociales img {
+      margin-top: 1vw;
+      height: 2vw;
+      opacity: 0.7;
+      border-radius: 100%; }
+    footer .footer__redesSocialesP {
+      padding-left: 2vw;
+      padding-right: 2vw;
+      border-left: solid 1px white;
+      border-right: solid 1px white;
+      margin-top: 4vh; } }

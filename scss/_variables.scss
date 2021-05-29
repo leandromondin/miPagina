@@ -1,0 +1,12 @@
+$verde_fondo_string:#199473;
+$verde_claro:#C6F7E2;
+$gris_texto:#627D98;
+$gris_negro:#102A43;
+$blanco_verdoso:#EFFCF6;
+
+@mixin elementos_center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}

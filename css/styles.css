@@ -1,0 +1,354 @@
+.contenedorLogosSkillsTecnicos  {
+                display:flex;
+                align-items: center;
+                margin-bottom: 50px;
+                width: 100%;
+                background-color:white;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 2vh;
+                }
+
+.contenedorLogosSkillsTecnicos  img {
+                                    height: 7vh;
+                                    border-radius: 1vh;
+                                    border: dotted 0.5px grey;
+                                    margin-left:0px; 
+                                    max-width: 4vw;
+                                    }
+
+/* Linea de tiempo laboral */
+@media (min-width: 1000px) {
+    .timeline__card__year:nth-child(even) .head::after, .timeline__card__year:nth-child(odd) .head::after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+    }
+  
+    .timeline__card__year:nth-child(even) .head::before, .timeline__card__year:nth-child(odd) .head::before {
+      position: absolute;
+      content: "";
+      width: 9px;
+      height: 9px;
+      background-color: #bdbdbd;
+      border-radius: 9px;
+      box-shadow: 0px 0px 2px 8px #f7f7f7;
+    }
+  }
+  /* Some Cool Stuff */
+  .timeline__card__year:nth-child(1) {
+    order: 1;
+  }
+  .timeline__card__year:nth-child(2) {
+    order: 4;
+  }
+  
+  .timeline__card__year:nth-child(3) {
+    order: 2;
+  }
+  
+  .timeline__card__year:nth-child(4) {
+    order: 5;
+  }
+  
+  .timeline__card__year:nth-child(5) {
+    order: 3;
+  }
+  
+  .timeline__card__year:nth-child(6) {
+    order: 6;
+  }
+  
+  
+  #timeline {
+    padding: 5vh 0;
+    background: #f7f7f7;
+    border-top: 1px solid rgba(191, 191, 191, 0.4);
+    border-bottom: 1px solid rgba(191, 191, 191, 0.4);
+  }
+      #timeline h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 200;
+        margin-bottom: 2rem;
+      }
+
+      .timeline__presentacion {
+        text-align: justify;
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 2rem;
+      }
+      .timeline__card {
+        position: relative;
+        margin: auto;
+      }
+
+  @media (min-width: 1000px) {
+    #timeline .timeline__card {
+      display: flex;
+      flex-flow: column wrap;
+      width: 1170px;
+      height: 1650px;
+      margin: 0 auto;
+    }
+  }
+  #timeline .timeline__card::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+  }
+  @media (min-width: 1000px) {
+    #timeline .timeline__card::after {
+      border-left: 1px solid #bdbdbd;
+    }
+  }
+  .timeline__card__year {
+    position: relative;
+    display: block;
+    margin: 10px auto 80px;
+    max-width: 94%;
+    z-index: 2;
+    
+  }
+  @media (min-width: 480px) {
+    .timeline__card__year {
+      max-width: 60%;
+      box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+    }
+  }
+  @media (min-width: 720px) {
+    .timeline__card__year {
+      max-width: 40%;
+      
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    .timeline__card__year {
+      max-width: 450px;
+      height: 50vh;
+      margin: 90px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+    }
+    .timeline__card__year:nth-child(odd) {
+      margin-right: 45px;
+    }
+    .timeline__card__year:nth-child(odd) .head::after {
+      border-left-width: 15px;
+      border-left-style: solid;
+      left: 100%;
+    }
+    .timeline__card__year:nth-child(odd) .head::before {
+      left: 491.5px;
+    }
+    .timeline__card__year:nth-child(even) {
+      margin-left: 45px;
+    }
+    .timeline__card__year:nth-child(even) .head::after {
+      border-right-width: 15px;
+      border-right-style: solid;
+      right: 100%;
+    }
+    .timeline__card__year:nth-child(even) .head::before {
+      right: 489.5px;
+    }
+    .timeline__card__year:nth-child(2) {
+      margin-top: 180px;
+    }
+  }
+  .card__year--header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 400;
+  }
+  .card__year--header--numero {
+    display: inline;
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    font-size: 3vh;
+    line-height: 35px;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.17);
+  }
+  .card__year--header h2 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: inherit;
+    letter-spacing: 2px;
+    margin: 0;
+    padding-bottom: 6px;
+    line-height: 1rem;
+  }
+  @media (min-width: 480px) {
+    .card__year--header h2 {
+      font-size: 165%;
+      line-height: 1.2rem;
+    }
+  }
+  .card__year--header h2 span {
+    display: block;
+    font-size: 0.6rem;
+    margin: 0;
+  }
+  @media (min-width: 480px) {
+    .card__year--header h2 span {
+      font-size: 0.8rem;
+    }
+  }
+  .card__year--body {
+    background: #fff;
+    border: 1px solid rgba(191, 191, 191, 0.4);
+    border-top: 0;
+    padding: 15px;
+  }
+  @media (min-width: 1000px) {
+    .card__year--body {
+      height: 315px;
+    }
+  }
+  .card__year--body p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  .card__year--body img {
+    display: block;
+    width: 100%;
+  }
+  .timeline__card__year--work {
+    background-color: #3EBD93;
+  }
+  .card__year--header::after {
+    border-color: #3EBD93;
+}
+
+
+
+/* Header Sección Contacto */
+
+header .header__presentacionContacto   {
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+
+.header__presentacionContacto h1    {
+    margin-bottom: 3vh;
+    height:100%;
+    font-size: 4vh;}
+
+    .darkh1     {color:#102A43;}
+    .lighth1     {color:#C6F7E2;}
+
+
+.header__presentacionContacto h2    {
+    margin-top: 7vh;    
+    font-size: 2vh;}
+
+    .darkh2    {color:#627D98;}
+    .lighth2     {color:#627D98;}
+
+
+
+.presentacionContacto__form{
+    width:50%;
+    height:100%;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    box-sizing:border-box;
+    padding-bottom: 5%;
+    margin-right: 25%;
+    }
+
+
+.presentacionContacto__form input {
+        width:100%;
+        padding:2%;
+        box-sizing:border-box;
+        background:none;
+        outline:none;
+        resize:none;
+        border:0;font-family:'Montserrat',sans-serif;
+        transition:all 1s;
+        border-bottom:2px solid #bebed2
+        }
+
+
+.presentacionContacto__form input:focus{border-bottom:2px solid #78788c}
+
+.presentacionContacto__form p{
+    display:block;
+    margin:3vh;
+    font-size:14px;color:#5a5a5a;
+    transition:all 1s}
+
+button
+    {float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all 1s}
+
+button:hover{background:#78788c;
+    color:#fff}
+
+.presentacionContacto__form--bloqueContactame{
+    position:absolute;
+    background-color: #3EBD93;
+    color:#fff;width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:2vh;
+    box-shadow:10px 10px 40px -14px #000}
+
+
+
+
+    .animate__flipInX {
+      --animate-duration: 4s;
+    }
+
+    .animate__fadeIn   { --animate-duration: 4s;
+  }
+
+  .animate__animated.animate__fadeIn   { --animate-duration: 900ms;}
+
+
+.notFound_Caja{
+  height: 40%;
+  margin-right:20%;
+  margin-top:20%;
+  margin-left:20%;
+  width:50%;
+}
+
+
+ header .notFound__CajaBack {
+    position: absolute;
+    z-index: -1;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: right;
+    margin-left:30%; }
