@@ -327,9 +327,11 @@ button:hover{background:#78788c;
 
     .animate__flipInX {
       --animate-duration: 4s;
+      
     }
 
     .animate__fadeIn   { --animate-duration: 4s;
+      
   }
 
   .animate__animated.animate__fadeIn   { --animate-duration: 900ms;}
