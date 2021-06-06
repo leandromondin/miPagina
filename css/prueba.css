@@ -78,11 +78,11 @@ header {
       color: #102A43;
       text-decoration: none; }
     header .header__changeLanguage .header__changeLanguage--linkedin_image {
-      height: 3.5vh;
+      height: 4vh;
       margin-right: 4vh;
       margin-left: 3vh;
-      opacity: 0.4;
-      border-radius: 50%; }
+      border-radius: 50%;
+      opacity: 0.9; }
   header .header__presentacion {
     height: 70%;
     align-items: center;
@@ -171,6 +171,28 @@ header {
   header .header__fraseTrabajo .pRelleno {
     padding-left: 0.5vw;
     padding-right: 0.5vw; }
+  header .header__sobreMi {
+    height: 20%;
+    background-color: #003E6B;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5vh;
+    border-top-right-radius: 60%;
+    border-top-left-radius: 60%;
+    opacity: 0.8;
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center; }
+    header .header__sobreMi item {
+      background-color: white;
+      color: #003E6B;
+      margin: 2vh;
+      padding: 1vh;
+      opacity: 0.8; }
 
 * {
   padding: 0;
