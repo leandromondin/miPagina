@@ -22,14 +22,15 @@
         margin-top:10vh;
         margin-left:5vw;
         width: 90vw;
-        height: 240vh;
+        height: 30vh;
         background-position: center center;
         border-top-left-radius: 10vw;
         border-top-right-radius: 10vw;
-        opacity: 0.7;
+        opacity: 0.9;
         position: absolute;
         z-index: -1;
-        background-color: #3EBD93;
+        background-color:rgba(0, 0, 0, 0.863);
+
         }
 
 
@@ -55,7 +56,7 @@
                                 justify-content: center;
                                 flex-direction: column;
                                 align-items: center;
-                                color:#102A43;
+                                color:white;
                                 
                                 } 
                                 
@@ -65,9 +66,9 @@
                                     font-size:2.5vh;
                                     display: flex;
                                     align-items: center;
-                                    color:#102A43;
                                     justify-content: flex-start;
                                     flex-direction: column;
+                                    color:white;
                                                         } 
                                 
         }
@@ -95,6 +96,7 @@
                 margin:auto;
                 background-color: rgba(255, 255, 255, 0.671);
                 color: white;
+
             } 
 
         
@@ -165,26 +167,31 @@
 .cajaFlex{
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 90vw;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 70vh;
     padding-left: 1vw;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+    background-color: rgba(0, 0, 0, 0.561);
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 
     .imagen{
-        height:55vh;
-        width: 40vw;
-        margin-top:2%;
-        margin-bottom:2%;
+        height:42vh;
+        width: 30vw;
+        margin-top:5vh;
+        margin-bottom:5vh;
         border-radius: 20%;
-        transform: perspective(100px) rotateY(3deg);
+        transform: perspective(100px) rotateY(4deg);
+        margin-left: 20vh;
 
     }
 
     .carousel{
-            padding-top: 8%;
-            transform: perspective(100px) rotateY(-3deg);
+            height: 10vh;
+            margin-left: 5vh;
+            margin-top: 3vh;
     }
 }
 
