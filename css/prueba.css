@@ -150,10 +150,13 @@ header {
   header .header__frasePortadaMiViajeOpciones p {
     font-size: 2.5vh;
     padding: 2vh;
-    margin-right: 6vh; }
+    margin-right: 6vh;
+    color: white;
+    opacity: 0.5; }
   header .header__frasePortadaMiViajeOpciones p:hover {
     background-color: white;
-    color: #199473; }
+    color: #199473;
+    opacity: 1; }
   header .header__fraseTrabajo {
     height: 20%;
     background-color: #D9E2EC;
@@ -245,14 +248,14 @@ body {
     margin-top: 10vh;
     margin-left: 5vw;
     width: 90vw;
-    height: 240vh;
+    height: 30vh;
     background-position: center center;
     border-top-left-radius: 10vw;
     border-top-right-radius: 10vw;
-    opacity: 0.7;
+    opacity: 0.9;
     position: absolute;
     z-index: -1;
-    background-color: #3EBD93; }
+    background-color: rgba(0, 0, 0, 0.863); }
   .bannerArteyAmarte .arteyAmarteContainer {
     margin-top: 10vh;
     margin-left: 5vw;
@@ -272,16 +275,16 @@ body {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      color: #102A43; }
+      color: white; }
     .bannerArteyAmarte .arteyAmarteContainer p {
       width: 100%;
       height: 25vh;
       font-size: 2.5vh;
       display: flex;
       align-items: center;
-      color: #102A43;
       justify-content: flex-start;
-      flex-direction: column; }
+      flex-direction: column;
+      color: white; }
   .bannerArteyAmarte .arteyAmarteContainer__pintura {
     height: 90vh;
     width: 100vw;
@@ -352,22 +355,27 @@ body {
 .cajaFlex {
   display: flex;
   flex-direction: row;
-  width: 80vw;
+  width: 90vw;
   align-items: flex-start;
   justify-content: flex-start;
-  height: 70vh;
   padding-left: 1vw;
-  margin-bottom: 10vh; }
+  margin-bottom: 5vh;
+  background-color: rgba(0, 0, 0, 0.561);
+  margin-top: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh; }
   .cajaFlex .imagen {
-    height: 55vh;
-    width: 40vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    height: 42vh;
+    width: 30vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     border-radius: 20%;
-    transform: perspective(100px) rotateY(3deg); }
+    transform: perspective(100px) rotateY(4deg);
+    margin-left: 20vh; }
   .cajaFlex .carousel {
-    padding-top: 8%;
-    transform: perspective(100px) rotateY(-3deg); }
+    height: 10vh;
+    margin-left: 5vh;
+    margin-top: 3vh; }
 
 .bannerFelicidad {
   width: 100vw;
@@ -378,7 +386,7 @@ body {
   flex-direction: column;
   display: flex; }
   .bannerFelicidad .bannerFelicidad--fondo0 {
-    background-image: url(../imagenes/questions.jpeg);
+    background-image: url(../imagenes/miViajeBack2.jpeg);
     background-size: cover;
     z-index: -2;
     width: 100%;
