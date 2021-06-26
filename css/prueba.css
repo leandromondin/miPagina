@@ -316,12 +316,17 @@ body {
 
 .bannerArteyAmarte {
   width: 100vw;
-  height: 260vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   flex-direction: column;
   display: flex; }
+  @media (min-width: 100px) {
+    .bannerArteyAmarte {
+      height: 330vh; } }
+  @media (min-width: 480px) {
+    .bannerArteyAmarte {
+      height: 260vh; } }
   .bannerArteyAmarte .arteBack {
     background-image: url(../imagenes/arteBack.jpeg);
     background-size: cover;
@@ -330,18 +335,32 @@ body {
     height: 260vh;
     position: absolute;
     opacity: 0.5; }
-  .bannerArteyAmarte .fondoArteyAmarteContainer {
-    margin-top: 10vh;
-    margin-left: 5vw;
-    width: 90vw;
-    height: 30vh;
-    background-position: center center;
-    border-top-left-radius: 10vw;
-    border-top-right-radius: 10vw;
-    opacity: 0.9;
-    position: absolute;
-    z-index: -1;
-    background-color: rgba(0, 0, 0, 0.863); }
+  @media (min-width: 100px) {
+    .bannerArteyAmarte .fondoArteyAmarteContainer {
+      margin-top: 10vh;
+      margin-left: 1vw;
+      width: 98vw;
+      height: 47vh;
+      background-position: center center;
+      border-top-left-radius: 10vw;
+      border-top-right-radius: 10vw;
+      opacity: 0.9;
+      position: absolute;
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.863); } }
+  @media (min-width: 480px) {
+    .bannerArteyAmarte .fondoArteyAmarteContainer {
+      margin-top: 10vh;
+      margin-left: 5vw;
+      width: 90vw;
+      height: 38vh;
+      background-position: center center;
+      border-top-left-radius: 10vw;
+      border-top-right-radius: 10vw;
+      opacity: 0.9;
+      position: absolute;
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.863); } }
   .bannerArteyAmarte .arteyAmarteContainer {
     margin-top: 10vh;
     margin-left: 5vw;
@@ -349,7 +368,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 90vw;
-    height: 180vh;
+    height: 240vh;
     background-position: center center;
     border-radius: 10vw;
     text-align: center; }
@@ -363,14 +382,15 @@ body {
       align-items: center;
       color: white; }
     .bannerArteyAmarte .arteyAmarteContainer p {
-      width: 100%;
+      width: 95%;
       height: 25vh;
       font-size: 2.5vh;
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-direction: column;
-      color: white; }
+      color: white;
+      text-align: justify; }
   .bannerArteyAmarte .arteyAmarteContainer__pintura {
     height: 90vh;
     width: 100vw;
@@ -438,34 +458,62 @@ body {
     transform: perspective(100px) rotateY(3deg);
     perspective: 100px, rotateY(3deg); }
 
-.cajaFlex {
-  display: flex;
-  flex-direction: row;
-  width: 90vw;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 1vw;
-  margin-bottom: 5vh;
-  background-color: rgba(0, 0, 0, 0.561);
-  margin-top: 5vh;
-  padding-top: 5vh;
-  padding-bottom: 5vh; }
-  .cajaFlex .imagen {
-    height: 42vh;
-    width: 30vw;
-    margin-top: 5vh;
+@media (min-width: 100px) {
+  .cajaFlex {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1vw;
     margin-bottom: 5vh;
-    border-radius: 20%;
-    transform: perspective(100px) rotateY(4deg);
-    margin-left: 20vh; }
-  .cajaFlex .carousel {
-    height: 10vh;
-    margin-left: 5vh;
-    margin-top: 3vh; }
+    background-color: rgba(0, 0, 0, 0.561);
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
+    .cajaFlex .imagen {
+      height: 35vh;
+      width: 82vw;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      border-radius: 20%;
+      transform: perspective(100px) rotateY(4deg);
+      margin-left: 5vw; }
+    .cajaFlex .carousel {
+      height: 25vh;
+      width: 100vw;
+      margin-left: 5vh;
+      margin-top: 3vh; } }
+
+@media (min-width: 100px) and (min-width: 480px) {
+  .cajaFlex {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 1vw;
+    margin-bottom: 5vh;
+    background-color: rgba(0, 0, 0, 0.561);
+    margin-top: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh; }
+    .cajaFlex .imagen {
+      height: 42vh;
+      width: 30vw;
+      margin-top: 5vh;
+      margin-bottom: 5vh;
+      border-radius: 20%;
+      transform: perspective(100px) rotateY(4deg);
+      margin-left: 20vh; }
+    .cajaFlex .carousel {
+      height: 10vh;
+      margin-left: 5vh;
+      margin-top: 3vh; } }
 
 .bannerFelicidad {
   width: 100vw;
-  height: 200vh;
+  height: 180vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -476,36 +524,101 @@ body {
     background-size: cover;
     z-index: -2;
     width: 100%;
-    height: 200vh;
+    height: 180vh;
     position: absolute;
     opacity: 0.5; }
-  .bannerFelicidad .bannerFelicidad--fondo1 {
-    margin-top: 10vh;
-    margin-left: 5vw;
-    width: 90vw;
-    height: 180vh;
-    background-position: center center;
-    border-top-left-radius: 10vw;
-    border-top-right-radius: 10vw;
-    opacity: 0.6;
-    position: absolute;
-    z-index: -1;
-    background-color: black; }
-  .bannerFelicidad .bannerFelicidadContainer {
-    margin-top: 10vh;
-    margin-left: 5vw;
-    padding-left: 10vh;
-    padding-right: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90vw;
-    height: 180vh;
-    background-position: center center;
-    border-radius: 10vw;
-    text-align: justify;
-    color: white; }
-  .bannerFelicidad .bannerFelicidadContainer h1 {
+  @media (min-width: 100px) {
+    .bannerFelicidad .bannerFelicidad--fondo1 {
+      margin-top: 10vh;
+      margin-left: 1vw;
+      width: 98vw;
+      height: 160vh;
+      background-position: center center;
+      border-top-left-radius: 10vw;
+      border-top-right-radius: 10vw;
+      opacity: 0.6;
+      position: absolute;
+      z-index: -1;
+      background-color: black; }
+    .bannerFelicidad .bannerFelicidadContainer {
+      margin-top: 10vh;
+      margin-left: 5vw;
+      padding-left: 1vw;
+      padding-right: 1vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      height: 160vh;
+      background-position: center center;
+      border-radius: 10vw;
+      text-align: justify;
+      color: white;
+      font-size: 1vw; }
+    .bannerFelicidad .bannerFelicidadContainer p {
+      width: 100%;
+      height: 25vh;
+      font-size: 2.5vh;
+      margin-bottom: 15vh; }
+    .bannerFelicidad .bannerFelicidadContainer__testimonio {
+      width: 100%;
+      font-size: 4vw;
+      text-align: center;
+      margin: 0;
+      background-color: white;
+      color: black;
+      opacity: 0.8;
+      margin-bottom: 5vh;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border-top-left-radius: 10vw;
+      border-bottom-right-radius: 10vw; } }
+  @media (min-width: 480px) {
+    .bannerFelicidad .bannerFelicidad--fondo1 {
+      margin-top: 10vh;
+      margin-left: 5vw;
+      width: 90vw;
+      height: 160vh;
+      background-position: center center;
+      border-top-left-radius: 10vw;
+      border-top-right-radius: 10vw;
+      opacity: 0.6;
+      position: absolute;
+      z-index: -1;
+      background-color: black; }
+    .bannerFelicidad .bannerFelicidadContainer {
+      margin-top: 10vh;
+      margin-left: 5vw;
+      padding-left: 10vh;
+      padding-right: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      height: 180vh;
+      background-position: center center;
+      border-radius: 10vw;
+      text-align: justify;
+      color: white; }
+    .bannerFelicidad .bannerFelicidadContainer p {
+      width: 100%;
+      height: 25vh;
+      font-size: 2.5vh;
+      margin-bottom: 2vh; }
+    .bannerFelicidad .bannerFelicidadContainer__testimonio {
+      width: 100%;
+      font-size: 3.5vh;
+      text-align: center;
+      margin: 0;
+      background-color: white;
+      color: black;
+      opacity: 0.8;
+      margin-bottom: 10vh;
+      padding-top: 2vh;
+      padding-bottom: 2vh;
+      border-top-left-radius: 5vh;
+      border-bottom-right-radius: 5vh; } }
+  .bannerFelicidad .bannerFelicidadContainer h3 {
     width: 100%;
     height: 18vh;
     font-size: 4vh;
@@ -514,21 +627,6 @@ body {
     flex-direction: column;
     align-items: center;
     color: white; }
-  .bannerFelicidad .bannerFelicidadContainer p {
-    width: 100%;
-    height: 25vh;
-    font-size: 2.5vh; }
-  .bannerFelicidad .bannerFelicidadContainer__testimonio {
-    width: 100%;
-    font-size: 3.5vh;
-    text-align: center;
-    margin: 0;
-    background-color: white;
-    color: black;
-    opacity: 0.8;
-    margin-bottom: 10vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh; }
 
 @media only screen and (min-width: 100px) {
   footer {

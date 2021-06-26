@@ -407,10 +407,7 @@ button:hover{background:#78788c;
 
 /*Nuevo Carousel  */
 
-.pic-ctn {
-  width: 9vw;
-  opacity: 0.8;
-}
+
 
 @keyframes display {
   0% {
@@ -440,10 +437,20 @@ button:hover{background:#78788c;
   width: 30vw;
 }
 
+@media (min-width: 100px) {
 .pic-ctn .pic{
-  height: 45vh;
-  width: 30vw;
+  height: 26vh;
+  width: 55vw;
 }
+}
+
+@media (min-width: 480px) {
+  .pic-ctn .pic{
+    height: 45vh;
+    width: 30vw;
+  }
+  }
+
 
 .pic-ctn > img {
   position: absolute;
