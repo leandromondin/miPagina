@@ -424,23 +424,23 @@ button:hover{background:#78788c;
   /*Nuevo Carousel  */
 @keyframes display {
   0% {
-    transform: translateX(200px);
+    transform: translateX(20px);
     opacity: 0;
   }
   10% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
   20% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
   30% {
-    transform: translateX(-200px);
+    transform: translateY(-20px);
     opacity: 0;
   }
   100% {
-    transform: translateX(-200px);
+    transform: translateY(-20px);
     opacity: 0;
   }
 }
@@ -454,6 +454,7 @@ button:hover{background:#78788c;
 .pic-ctn .pic{
   height: 26vh;
   width: 55vw;
+  margin-left: 10vw;
 }
 }
 
@@ -461,6 +462,8 @@ button:hover{background:#78788c;
   .pic-ctn .pic{
     height: 45vh;
     width: 30vw;
+    margin-left: 3vw;
+    margin-top: 4vh;
   }
   }
 
