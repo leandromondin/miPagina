@@ -1,12 +1,16 @@
+
 .bannerArteyAmarte    {
     width: 100vw;
-    height: 260vh;
+    @media (min-width: 100px) {
+    height: 330vh;}
+    @media (min-width: 480px) {
+        height: 260vh;}
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     flex-direction: column;
     display: flex;
-    
+
 
     .arteBack{
         background-image: url(../imagenes/arteBack.jpeg);
@@ -18,11 +22,29 @@
         opacity: 0.5;
     }
     
+    @media (min-width: 100px) {
+        .fondoArteyAmarteContainer   {
+            margin-top:10vh;
+            margin-left:1vw;
+            width: 98vw;
+            height: 47vh;
+            background-position: center center;
+            border-top-left-radius: 10vw;
+            border-top-right-radius: 10vw;
+            opacity: 0.9;
+            position: absolute;
+            z-index: -1;
+            background-color:rgba(0, 0, 0, 0.863);
+    
+            }
+    }
+
+    @media (min-width: 480px) {
     .fondoArteyAmarteContainer   {
         margin-top:10vh;
         margin-left:5vw;
         width: 90vw;
-        height: 30vh;
+        height: 38vh;
         background-position: center center;
         border-top-left-radius: 10vw;
         border-top-right-radius: 10vw;
@@ -32,6 +54,7 @@
         background-color:rgba(0, 0, 0, 0.863);
 
         }
+    }
 
 
     .arteyAmarteContainer   {
@@ -41,12 +64,11 @@
                             flex-direction: column;
                             align-items: center;
                             width: 90vw;
-                            height: 180vh;
+                            height: 240vh;
                             background-position: center center;
                             border-radius: 10vw;
                             text-align: center;
                             
-
 
         h1{
                                 width: 100%;                    
@@ -61,7 +83,7 @@
                                 } 
                                 
         p{
-                                    width: 100%;                    
+                                    width: 95%;                    
                                     height: 25vh;
                                     font-size:2.5vh;
                                     display: flex;
@@ -69,6 +91,7 @@
                                     justify-content: flex-start;
                                     flex-direction: column;
                                     color:white;
+                                    text-align: justify;
                                                         } 
                                 
         }
@@ -164,34 +187,71 @@
         }
         }
 
-.cajaFlex{
-    display: flex;
-    flex-direction: row;
-    width: 90vw;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding-left: 1vw;
-    margin-bottom: 5vh;
-    background-color: rgba(0, 0, 0, 0.561);
-    margin-top: 5vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
 
-    .imagen{
-        height:42vh;
-        width: 30vw;
-        margin-top:5vh;
-        margin-bottom:5vh;
-        border-radius: 20%;
-        transform: perspective(100px) rotateY(4deg);
-        margin-left: 20vh;
-
-    }
-
-    .carousel{
-            height: 10vh;
-            margin-left: 5vh;
-            margin-top: 3vh;
+        @media (min-width: 100px) {
+            .cajaFlex{
+                display: flex;
+                flex-direction: column;
+                width: 90vw;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-left: 1vw;
+                margin-bottom: 5vh;
+                background-color: rgba(0, 0, 0, 0.561);
+                margin-top: 5vh;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+            
+                .imagen{
+                    height:35vh;
+                    width: 82vw;
+                    margin-top:5vh;
+                    margin-bottom:5vh;
+                    border-radius: 20%;
+                    transform: perspective(100px) rotateY(4deg);
+                    margin-left: 5vw;
+            
+                }
+            
+                .carousel{
+                        height:25vh;
+                        width: 100vw;
+                        margin-left: 5vh;
+                        margin-top: 3vh;
+                }
+        }
+        
+        @media (min-width: 480px) {
+            .cajaFlex{
+                display: flex;
+                flex-direction: row;
+                width: 90vw;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-left: 1vw;
+                margin-bottom: 5vh;
+                background-color: rgba(0, 0, 0, 0.561);
+                margin-top: 5vh;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+            
+                .imagen{
+                    height:42vh;
+                    width: 30vw;
+                    margin-top:5vh;
+                    margin-bottom:5vh;
+                    border-radius: 20%;
+                    transform: perspective(100px) rotateY(4deg);
+                    margin-left: 20vh;
+            
+                }
+            
+                .carousel{
+                        height: 10vh;
+                        margin-left: 5vh;
+                        margin-top: 3vh;
+                }
+        }
     }
 }
 
