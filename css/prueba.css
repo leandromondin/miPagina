@@ -1,4 +1,34 @@
 @charset "UTF-8";
+.index_movimiento {
+  position: relative;
+  background-image: url(../imagenes/index_back.png);
+  background-size: 120%;
+  animation: movimiento 15s ease-in-out infinite alternate-reverse; }
+
+.miviaje_movimiento {
+  position: relative;
+  background-image: url(../imagenes/miViajeBack.png);
+  background-size: 150%;
+  animation: movimiento 20s ease-in-out infinite alternate-reverse; }
+
+.trabajo_movimiento {
+  position: relative;
+  background-image: url(../imagenes/workBack.jpeg);
+  background-size: 130%;
+  animation: movimiento 20s ease-in-out infinite alternate-reverse; }
+
+.contacto_movimiento {
+  position: relative;
+  background-image: url(../imagenes/contactBack.jpeg);
+  background-size: 150%;
+  animation: movimiento 15s ease-in-out infinite alternate-reverse; }
+
+@keyframes movimiento {
+  from {
+    background-position: top left; }
+  to {
+    background-position: right; } }
+
 /* Menu de navegación -header*/
 header {
   display: flex;
@@ -9,8 +39,10 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 200%;
   transition: 1s linear;
   overflow: hidden;
+  position: relative;
   /*Index*/
   /*miViaje*/
   /*Trabajo*/ }
@@ -68,6 +100,9 @@ header {
       text-decoration: none; }
     header nav .ul--item li a .light {
       color: #C6F7E2; }
+    header nav .ul--item li .light:hover {
+      color: white;
+      opacity: 0.8; }
     header nav .ul--item li a:hover {
       color: #102A43; }
   @media only screen and (min-width: 100px) {
@@ -144,7 +179,7 @@ header {
   @media only screen and (min-width: 100px) {
     header .header__frasePortada {
       height: 20%;
-      background-color: #199473;
+      background-color: #199473bb;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -152,8 +187,7 @@ header {
       flex-direction: column;
       font-size: 2vh;
       border-top-right-radius: 60%;
-      border-top-left-radius: 60%;
-      opacity: 0.8; }
+      border-top-left-radius: 60%; }
     header .header__frasePortada--primerRenglon {
       font-size: 110%;
       color: #EFFCF6;
@@ -170,7 +204,6 @@ header {
   @media only screen and (min-width: 768px) {
     header .header__frasePortada {
       height: 20%;
-      background-color: #199473;
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -178,8 +211,7 @@ header {
       flex-direction: column;
       font-size: 2vh;
       border-top-right-radius: 60%;
-      border-top-left-radius: 60%;
-      opacity: 0.8; }
+      border-top-left-radius: 60%; }
     header .header__frasePortada--primerRenglon {
       font-size: 150%;
       color: #EFFCF6;
@@ -202,7 +234,7 @@ header {
     display: flex;
     flex-direction: column;
     font-size: 1.5vh;
-    opacity: 0.8;
+    opacity: 0.85;
     width: 100%; }
     @media (min-width: 100px) {
       header .header__frasePortadaMiViaje {
@@ -236,7 +268,7 @@ header {
     font-size: 1.5vh;
     border-top-right-radius: 60%;
     border-top-left-radius: 60%;
-    opacity: 0.7;
+    opacity: 0.8;
     color: blacK;
     font-size: 3vh; }
   header .header__fraseTrabajo .pRelleno {

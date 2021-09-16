@@ -1,3 +1,43 @@
+
+.index_movimiento{
+    position: relative;
+    background-image: url(../imagenes/index_back.png);
+    background-size: 120%;
+    animation: movimiento 15s ease-in-out infinite alternate-reverse;
+}
+.miviaje_movimiento{
+    position: relative;
+    background-image: url(../imagenes/miViajeBack.png);
+    background-size: 150%;
+    animation: movimiento 20s ease-in-out infinite alternate-reverse;
+}
+
+.trabajo_movimiento{
+    position: relative;
+    background-image: url(../imagenes/workBack.jpeg);
+    background-size: 130%;
+    animation: movimiento 20s ease-in-out infinite alternate-reverse;
+}
+
+
+.contacto_movimiento{
+    position: relative;
+    background-image: url(../imagenes/contactBack.jpeg);
+    background-size: 150%;
+    animation: movimiento 15s ease-in-out infinite alternate-reverse;
+}
+
+
+@keyframes movimiento{
+    from{
+        background-position: top left;
+    }to{
+        background-position: right;
+    }
+}
+
+
+
 /* Menu de navegación -header*/
 header  {
     display:flex;
@@ -8,8 +48,12 @@ header  {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 200%;
     transition: 1s linear;
     overflow: hidden;
+    position: relative;
+   
+    
 
 
     @media only screen and (min-width: 100px) /* Menu de navegación para dispositivos con un ancho mayor a 100px*/{
@@ -20,7 +64,11 @@ header  {
         width: 300vw;
         height: 100vh;
         left: -200vw;
+  
+
+    
         }
+       
     }
 
     @media only screen and (min-width: 768px) /* Menu de navegación para dispositivos con un ancho mayor a 768px*/{
@@ -85,6 +133,11 @@ header  {
             .ul--item li a .light{
                 color:$verde_claro;
                 }
+
+                .ul--item li .light:hover{
+                    color:white;
+                    opacity: 0.8;
+                    }
 
             .ul--item li a:hover   {
                 color:$gris_negro;  
@@ -180,13 +233,12 @@ header  {
     @media only screen and (min-width: 100px){
     .header__frasePortada   {
                     height: 20%;
-                    background-color: $verde_fondo_string;
+                    background-color: #199473bb;;
                     @include elementos_center;
                     flex-direction: column;
                     font-size: 2vh;
                     border-top-right-radius:60%;
                     border-top-left-radius:60%;
-                    opacity: 0.8;
                     }
 
         .header__frasePortada--primerRenglon  {
@@ -210,13 +262,11 @@ header  {
     @media only screen and (min-width: 768px){
         .header__frasePortada   {
                         height: 20%;
-                        background-color: $verde_fondo_string;
                         @include elementos_center;
                         flex-direction: column;
                         font-size: 2vh;
                         border-top-right-radius:60%;
                         border-top-left-radius:60%;
-                        opacity: 0.8;
                         }
     
             .header__frasePortada--primerRenglon  {
@@ -254,7 +304,7 @@ header  {
             border-top-left-radius:60%;
         }
         
-        opacity: 0.8;
+        opacity: 0.85;
         width: 100%;
         }
 
@@ -288,7 +338,7 @@ header  {
             font-size: 1.5vh;
             border-top-right-radius:60%;
             border-top-left-radius:60%;
-            opacity: 0.7;
+            opacity: 0.8;
             color: blacK;
             font-size: 3vh;
             }
