@@ -20,26 +20,26 @@
 
 <body>
     <header class="animate__animated animate__fadeIn">
-        <div class="background trabajo_movimiento" src="../imagenes/workBack.jpeg" alt="trabajoBackground"></div>
+        <div class="background trabajo_movimiento" alt="trabajoBackground"></div>
         <nav>
-            <item class="ul--item">
-                <li><a href="./trabajo.html">Trabajo</a></li>
-                <li><a href="./miViaje.html">Mi viaje</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </item>
-            <div class="header__changeLanguage" >
-                <p>EN | ES</p>
-                <a href="../index.html"><img class="header__changeLanguage--linkedin_image" src="../imagenes/home.png" alt="home icon"/></a>
-            </div>
-        </nav>
+            <a href="../index.html"><img class="home" src="../imagenes/home.png" alt="home icon"/></a>
+              <item class="ul--item">
+                  <li><a id="navTrabajo" href="trabajo.html">Trabajo</a></li>
+                  <li><a id="navViaje" href="miViaje.html">Mi viaje</a></li>
+                  <li><a id="navContacto" href="contacto.html">Contacto</a></li>
+              </item>
+              <div class="header__changeLanguage" >
+                  <p><span id="ingles" onclick="ingles()"><img src="../imagenes/english.png"> </span>| <span id="espaniol" onclick="espaniol()"><img src="../imagenes/español.png"></p>
+              </div>
+          </nav>
 
         <section class="header__presentacion animate__animated animate__fadeIn">
             <h2 class="header__presentacion--darkh2">Leandro Mondin</h2>
-            <h1 class="header__presentacion--darkh1"> Trabajo </h1>
+            <h1 id="h1Trabajo" class="header__presentacion--darkh1"> Trabajo </h1>
         </section>
 
         <section class="header__fraseTrabajo animate__animated animate__flipInX">
-            <p>Sr IAM Security Engineer en Mercado Libre</p>
+            <p id="puestoMeli">Ingeniero Sr - Seguridad Informatica IAM en Mercado Libre</p>
         </section>
     </header>
 
@@ -159,7 +159,7 @@
 
     <footer><!-- Pie de página-->
         <section class="footer__redesSociales">
-                <p class="footer__redesSocialesP">Follow me!</p>
+            <p id="followMe" class="footer__redesSocialesP">Sigueme!</p>
                 <a href="https://www.instagram.com/leandromondin/">       
                   <img src="../imagenes/instagram.png" alt="Instagram"/>
                 </a>
@@ -172,9 +172,11 @@
         </section>
     </footer>
 
-    <script src="js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/custom.js"></script>
 </body>
 </html>

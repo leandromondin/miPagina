@@ -318,6 +318,21 @@ header {
 #ingles, #espaniol {
   cursor: pointer; }
 
+.header__changeLanguage img {
+  height: 2.5vh; }
+
+#ingles {
+  margin-right: 1vh; }
+
+#espaniol {
+  margin-left: 1vh; }
+
+.home {
+  height: 4.2vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  margin-right: 2vh; }
+
 * {
   padding: 0;
   margin: 0;
