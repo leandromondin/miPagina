@@ -20,16 +20,16 @@
 
 <body>
     <header class="animate__animated animate__fadeIn">
-    <div class="background contacto_movimiento" src="../imagenes/contactBack.jpeg" alt="indexBack"></div>
+        <div class="background contacto_movimiento" alt="trabajoBackground"></div>
         <nav>
+            <a href="../index.html"><img class="home" src="../imagenes/home.png" alt="home icon"/></a>
             <item class="ul--item">
-                <li><a href="./trabajo.html">Trabajo</a></li>
-                <li><a href="./miViaje.html">Mi viaje</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a id="navTrabajo" href="trabajo.html">Trabajo</a></li>
+                <li><a id="navViaje" href="miViaje.html">Mi viaje</a></li>
+                <li><a id="navContacto" href="contacto.html">Contacto</a></li>
             </item>
             <div class="header__changeLanguage" >
-                <p>EN | ES</p>
-                <a href="../index.html"><img class="header__changeLanguage--linkedin_image" src="../imagenes/home.png" alt="home icon"/></a>
+                <p><span id="ingles" onclick="ingles()"><img src="../imagenes/english.png"> </span><img class="change" src="../imagenes/changeIcon.png"> <span id="espaniol" onclick="espaniol()"><img src="../imagenes/espaniol.png"></p>
             </div>
         </nav>
 
@@ -42,7 +42,7 @@
                     <p type="Mensaje:"><input placeholder="¿En qué te puedo ayudar?"></input></p>
                     
                     <div class="presentacionContacto__form--bloqueContactame">
-                        mondin.leandro@gmail.com
+                        (Section in process) - Su mensaje será leído a la brevedad.
                     </div>
                     <button>Enviar Mensaje</button>
                 </form>
@@ -64,9 +64,12 @@
         </section>
     </footer>
 
-    <script src="js/wow.min.js"></script>
+
+    <script src="../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/custom.js"></script>
 </body>
 </html>

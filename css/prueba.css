@@ -321,6 +321,10 @@ header {
 .header__changeLanguage img {
   height: 2.5vh; }
 
+.header__changeLanguage .change {
+  height: 1.5vh;
+  opacity: 0.8; }
+
 #ingles {
   margin-right: 1vh; }
 

@@ -22,29 +22,29 @@
     <header class="animate__animated animate__fadeIn">
         <div class="background miviaje_movimiento" src="../imagenes/miViajeBack.png" alt="miViajeBackground" ></div>
         <nav>
+        <a href="../index.html"><img class="home" src="../imagenes/home.png" alt="home icon"/></a>
             <item class="ul--item">
-                <li><a class="light" href="./trabajo.html">Trabajo</a></li>
-                <li><a class="light" href="./miViaje.html">Mi viaje</a></li>
-                <li><a class="light" href="./contacto.html">Contacto</a></li>
+                <li><a class="light"  id="navTrabajo" href="trabajo.html">Trabajo</a></li>
+                <li><a class="light"  id="navViaje" href="miViaje.html">Mi viaje</a></li>
+                <li><a class="light"  id="navContacto" href="contacto.html">Contacto</a></li>
             </item>
             <div class="header__changeLanguage" >
-                <p class="light">EN | ES</p>
-                <a href="../index.html"><img class="header__changeLanguage--linkedin_image" src="../imagenes/home.png" alt="home icon"/></a>
+                <p><span id="ingles" onclick="ingles()"><img src="../imagenes/english.png"> </span><img class="change" src="../imagenes/changeIcon.png"> <span id="espaniol" onclick="espaniol()"><img src="../imagenes/espaniol.png"></p>
             </div>
         </nav>
 
         <section class="header__presentacion animate__animated animate__fadeIn">
             <h2 class="header__presentacion--lighth2">Leandro Mondin</h2>
-            <h1 class="header__presentacion--lighth1"> Mi viaje </h1>
+            <h1 id="h1Miviaje" class="header__presentacion--lighth1"> Mi viaje </h1>
         </section>
 
         <section class="header__frasePortadaMiViaje animate__animated animate__flipInX">
-            <p class="header__frasePortada--primerRenglon">Estoy convencido de que la vida es solo un viaje que transitamos.
+            <p id="viajeFrase" class="header__frasePortada--primerRenglon">Estoy convencido de que la vida es solo un viaje que transitamos.
                     <br>En dicho viaje me encuentro abordando 2 proyectos personales:
                     </p>
             <div class="header__frasePortadaMiViajeOpciones">
-                <a href="#bannerFelicidadContainer"><p>¿Que será la felicidad?</p></a>
-                <a href="#arteyAmarteContainer"><p>ArteyAmarte </p></a>
+                <a href="#bannerFelicidadContainer"><p id="viajeProyecto1">¿Que será la felicidad?</p></a>
+                <a href="#arteyAmarteContainer"><p id="viajeProyecto2">ArteyAmarte </p></a>
             </div>
         </section>
      
@@ -54,7 +54,7 @@
         <div class="bannerFelicidad--fondo0"></div>
         <div class="bannerFelicidad--fondo1"></div>
         <main class="bannerFelicidadContainer">
-            <a name="bannerFelicidadContainer"><h3>¿Que será la felicidad?</h3></a>
+            <a name="bannerFelicidadContainer"><h3>¿Que será la felicidad? (Section in process)</h3></a>
             <p>Si hoy conocieras un extraterrestre, pegaras buena onda y te pregunta <br> - "¿A qué se refieren los seres humanos cuando hablan de 'ser felices'?"<br> Estoy en búsqueda de lograr un concepto o una respuesta a esta pregunta. Para esto, tuve el placer de entrevistar a muchas personas quien estimo y/o admiro en mi vida. Estos son algunos testimonios que me gustaría compartir : </p>
             <item class=bannerFelicidadContainer__testimonio>'Estar en el aire, a punto de tirarme del paracaídas. Una mezcla de sensaciones increbiles, donde te sentis solos vos y el mundo de una manera indescriptible'</item>
             <item class=bannerFelicidadContainer__testimonio>'Ir con mi viejo en la cancha de river, entrando.. haciendo la fila.. escuchando a la hinchada cantar.. es algo inexplicable. Es algo... hermoso.'</item>
@@ -70,7 +70,7 @@
         <div class="fondoArteyAmarteContainer"></div>
         <main class="arteyAmarteContainer">
             
-            <a name="arteyAmarteContainer"><h1>Arte y Amarte</h1></a>
+            <a name="arteyAmarteContainer"><h1>Arte y Amarte (Section in process)</h1></a>
             <p>Esta iniciativa nace en plena pandemia en 2019. ArteyArmarte es la expresión del arte en acrílico sobre lienzos de tela con fines solidarios.<br> La iniciativa radica en relizar pinturas a pedido y poder venderlas para donar lo recaudado a una ONG sin fines de lucro, 'El Campito Refugio'  <br><br><br> </p>
             
             <item class="cajaFlex"><!--Buscando a dory-->
@@ -127,9 +127,11 @@
         </section>
     </footer>
 
-    <script src="js/wow.min.js"></script>
+    <script src="../js/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/custom.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@
                   <li><a id="navContacto" href="contacto.html">Contacto</a></li>
               </item>
               <div class="header__changeLanguage" >
-                  <p><span id="ingles" onclick="ingles()"><img src="../imagenes/english.png"> </span>| <span id="espaniol" onclick="espaniol()"><img src="../imagenes/espaniol.png"></p>
+                  <p><span id="ingles" onclick="ingles()"><img src="../imagenes/english.png"> </span><img class="change" src="../imagenes/changeIcon.png"> <span id="espaniol" onclick="espaniol()"><img src="../imagenes/espaniol.png"></p>
               </div>
           </nav>
 
@@ -39,39 +39,69 @@
         </section>
 
         <section class="header__fraseTrabajo animate__animated animate__flipInX">
-            <p id="puestoMeli">Ingeniero Sr - Seguridad Informatica IAM en Mercado Libre</p>
+            <p id="puestoMeli">Ingeniero Senior - Seguridad Informatica <br>IAM en Mercado Libre</p>
         </section>
     </header>
 
     <section id="timeline"><!-- Mi linea de tiempo acerca de mi vida laboral y profesional-->
-        <h4>Mi linea de tiempo laboral</h4>
-        <p class="timeline__presentacion">Considero la motivación diaria y la sinergía en un equipo de trabajo como el factor fundamental para la excelencia en todos los proyectos y desarrollos técnicos.
-            Soy un seguidor firme de esta idea, la cual me ayuda día a día para lograr plenitud en toda mi vida y carrera profesional.</p>
+        <h4 id="h4trabajo">Mis proyectos profesionales</h4>
+        <p id="trabajoPresentacion" class="timeline__presentacion">Considero la motivación diaria y la sinergía en un equipo de trabajo como el factor fundamental para la excelencia en todos los proyectos y desarrollos técnicos.
+            Soy un seguidor firme de esta idea, la cual me ayuda día a día para lograr plenitud en toda mi vida y carrera profesional. En dicha carrera tuve el placer de trabajar en las siguientes iniciativas:</p>
         <div class="timeline__card">
+
+
+
+
             <div class="timeline__card__year timeline__card__year--work">
                 <div class="card__year--header">
                     <div class="card__year--header--numero">
-                        <span>2020-hoy</span>
+                        <span>2021-hoy</span>
+                    </div>
+                    <h2><span class="small">Sr IAM Security Engineer</span> MercadoLibre</h2>
+                </div>
+                <div class="card__year--body">
+                    <p id="trabajoIAMSr"> Gestión y estandarización de todos los usuarios de la empresa (+ 50mil usuarios)<br><br>
+                        - AuthZ. Solución de set de permisos automáticos para todos las cuentas de empleados internos.<br>
+                        - Integración solución PAM Cyberark (infraestructura, cuentas y servicios) <br>
+                        - Estandarización de OUs y permisos en Github, Active Directory y Gsuite<br>
+                        - Administración Identity Provider Auth0, reglas y automatizaciones.<br><br>
+                    <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
+                        <img src="../imagenes/imagenesTrabajo/auth0-master.png" alt="auth0 master logo"/>
+                        <img src="../imagenes/imagenesTrabajo/cyberark.png" alt="cyberark logo"/>
+                        <img src="../imagenes/imagenesTrabajo/github.png" alt="github logo"/>
+                        <img src="../imagenes/imagenesTrabajo/gsuite.png" alt="gsuite logo"/>
+                        <img src="../imagenes/imagenesTrabajo/directoryUsers.png" alt="directorio de usuarios icon"/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="timeline__card__year timeline__card__year--work">
+                <div class="card__year--header">
+                    <div class="card__year--header--numero">
+                        <span>2020-2021</span>
                     </div>
                     <h2><span class="small">Ssr IAM Security Engineer</span> MercadoLibre</h2>
                 </div>
                 <div class="card__year--body">
-                    <p> Management and standardization of all users of the company (+30K users)
-                        Some developments of automation projects:<br><br>
-                        - Automatic user assign permissions for all Mercado Libre<br>
-                        - Integration of MFA for all apps with Single Sign On in MercadoLibre<br>
-                        - Integration PAM Solution<br>
-                        - Standardization of resources for all externals users.<br>
-                        - Integration with Facebook Workplace Spaces for all users in MercadoLibre<br><br>
+                    <p id="trabajoIAMSsr"> Gestión y estandarización de todos los usuarios de la empresa (+ 30mil usuarios)<br><br>
+                        - Integración de MFA (multifactor de autenticación) para todas las aplicaciones internas.<br>
+                        - Analisis de mercado y adquisición de solución PAM (Privileged Access Management)<br>
+                        - Estandarización de cuentas de empleados externos.<br>
+                        - Diseño e implementación de Facebook Workplace Spaces para todos los usuarios de la compañia.<br>
+                        - Desarrollo APIs backend. Automatizaciones API y gestión Auth0.<br>
                     <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
-                        <img src="../imagenes/imagenesTrabajo/cyberark.png" alt="cyberark logo"/>
                         <img src="../imagenes/imagenesTrabajo/workplace.jpg" alt="workplace logo"/>
                         <img src="../imagenes/imagenesTrabajo/auth0.png" alt="auth0 logo"/>
-                        <img src="../imagenes/imagenesTrabajo/users.jpeg" alt="cyberark logo"/>
+                        <img src="../imagenes/imagenesTrabajo/cyberark.png" alt="cyberark logo"/>
+                        <img src="../imagenes/imagenesTrabajo/flask.png" alt="flask logo"/>
+                        <img src="../imagenes/imagenesTrabajo/users.jpeg" alt="Usuarios icon"/>
                     </div>
                 </div>
             </div>
     
+      
+
             <div class="timeline__card__year timeline__card__year--work">
                 <div class="card__year--header">
                     <div class="card__year--header--numero">
@@ -80,14 +110,12 @@
                     <h2><span class="small">IAM Security Engineer</span> MercadoLibre</h2>
                 </div>
                 <div class="card__year--body">
-                    <p> Management and standardization of all users of the company (+20K users)
-                        Backend development. Cloud engineering (AWS - GCP - Azure)
-                        
-                        Some developments of automation projects:<br><br>
-                        - Automatic user create, modifications and disabled process for all Mercado Libre<br>
-                        - Integration of more 20 apps (for example Salesforce, Github, New Relic, Jira and Success Factors) with Single Sign On. Manage process of Auth0 (Identity Provider)<br>
-                        - Standardization of resources of Active Directory.<br><br></p>
-                        
+                    <p id="trabajoIAM">Gestión y estandarización de todos los usuarios de la empresa (+ 20mil usuarios)<br><br> 
+                        - Desarrollo APIs backend.<br> 
+                        - Ingeniería cloud (AWS - GCP - Azure)<br>
+                        - Procesos automáticos de creación, modificacion y deshabilitación de usuarios para toda la compañia.<br>
+                        - Integraciones con Single Sign On (SSO). (+20 apps como por ejemplo Salesforce, Workplace, New Relic, Jira y Success Factors)<br>
+                        - Estandarización de recursos del Active Directory.<br><br></p>
                         <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
                             <img src="../imagenes/imagenesTrabajo/ssff.jpeg" alt="ssff logo"/>
                             <img src="../imagenes/imagenesTrabajo/ad.png" alt="ad logo"/>
@@ -106,12 +134,13 @@
                     <h2><span class="small">Support Security Engineer</span> MercadoLibre</h2>
                 </div>
                 <div class="card__year--body">
-                    <p> - Information security assistance (+10K users)<br>
-                        - Support on security processes<br>
-                        - Proyects for process automation<br>
-                        - Access management [Active Directory - SAP - AWS- GCP - Azure - VPN - Salesforce]<br>
-                        - Databases<br>
-                        - Software development<br><br><br></p>
+                    <p id="trabajoIAMSupport">Asistencia en Seguridad Informática (+ 10mil usuarios).<br>
+                        <br>
+                        - Soporte en procesos de Seguridad<br>
+                        - Proyectos de automatización de procesos<br>
+                        - Gestion de accesos (Active Directory - SAP - AWS- GCP - Azure - VPN - Salesforce)<br>
+                        - Desarrollo de software y Bases de datos<br>
+                        - Gestion de SLA en tickets y requerimientos<br><br><br></p>
                         <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
                             <img src="../imagenes/imagenesTrabajo/aws.png" alt="aws icon"/>
                             <img src="../imagenes/imagenesTrabajo/sd.jpeg" alt="sd logo"/>
@@ -127,11 +156,15 @@
                     <div class="card__year--header--numero">
                         <span>2015-2017</span>
                     </div>
-                    <h2><span class="small">Proyectista automatización</span> Meditecna SRL</h2>
+                    <h2><span class="small">AUTOMATION PROJECTIST</span> Meditecna SRL</h2>
                 </div>
                 <div class="card__year--body">
-                    <p>Programación de PLC en proyectos de automatización con su posterior armado y diseño de tableros eléctricos.<br><br></p>
+                    <p id="TrabajoMetpro">- Programación de PLC y sistemas SCADA en proyectos de automatización.<br>
+                    - Diseño de tableros eléctricos con AutoCad y su posterior armado y conexión.<br>
+                    - Investigación del mercado para compras de tecnología.<br><br><br><br><br></p>
                     <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
+                        <img src="../imagenes/imagenesTrabajo/autocad.png" alt="AUTOCAD logo"/>
+                        <img src="../imagenes/imagenesTrabajo/scada.png" alt="SCADA logo"/>
                         <img src="../imagenes/imagenesTrabajo/abb.png" alt="abb logo"/>
                         <img src="../imagenes/imagenesTrabajo/schneider.png" alt="schneider logo"/>
                         <img src="../imagenes/imagenesTrabajo/wonder.png" alt="wonder logo"/>
@@ -144,12 +177,16 @@
                     <div class="card__year--header--numero">
                         <span>2014-2015</span>
                     </div>
-                    <h2><span class="small">Soporte técnico IT</span>ELECTRO-DOS</h2>
+                    <h2><span class="small">IT Support</span>ELECTRO-DOS</h2>
                 </div>
                 <div class="card__year--body">
-                    <p>Relevamiento y reparacion de la red y sus equipos informáticos.</p>
+                    <p id="TrabajoElectroDos">- Relevamiento y reparacion de la red y sus equipos informáticos.
+                    <br>- Diseño de banners y comunicaciones en las redes sociales.<br><br><br>
+                    </p>
                     <div class="contenedorLogosSkillsTecnicos"><!-- Logos soluciones trabajadas-->
                         <img src="../imagenes/imagenesTrabajo/mysql.png" alt="mysql logo"/>
+                        <img src="../imagenes/imagenesTrabajo/illustrator_icon.png" alt="Illustrator logo"/>
+                        <img src="../imagenes/imagenesTrabajo/photoshop_icon.png" alt="Photoshop logo"/>
                     </div>
                 </div>
             </div>
